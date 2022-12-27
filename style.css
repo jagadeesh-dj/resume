@@ -1,0 +1,177 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Chivo Mono', monospace;
+    
+}   
+body{
+    background-color: rgb(71, 191, 251);
+    
+}
+.container{
+    width: 80%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 2rem auto;
+    
+}
+.col1{
+    background-color: rgb(5, 71, 75);
+    grid-column: span 2;
+    height: 100%;
+    padding: 2rem 3rem;
+    
+}
+.col2{
+    background-color: rgb(234, 243, 243);
+    grid-column: span 5;
+    height: 100%;
+    padding: 2rem 3rem;
+
+}
+img{
+    border-radius: 50%;
+    width: 100%;
+}
+.profile{
+    text-align: center;
+}
+.details .name{
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size:xx-large;
+}
+.details p{
+    border: 0.1px solid black;
+    margin-top: 10%;
+}
+.details .destination{
+    color: rgb(54, 194, 245);
+    margin-top: -5%;
+    text-align: center;
+}
+.contact .head{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.contact ul{
+    list-style: none;
+    color: aqua;
+}
+.contact ul a{
+    color: aqua;
+    text-decoration: none;
+}
+.contact ul li{
+    margin-top: 5%;
+}
+.skills .skillhead{
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.skills ul{
+    list-style: none;
+    color: aqua;
+    text-transform: uppercase;
+}
+.skills ul li{
+    margin-top: 5%;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2%;
+    grid-area: 10px;
+}
+.col2 .obj{
+    text-transform: uppercase;
+}
+.obj-details{
+    margin-top: 2%;
+}
+.edu{
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+.lang{
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+.lang-details ul{
+    margin-top: 2%;
+    list-style: square;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.lang-details ul li{
+    margin-top: 1%;
+}
+.personal{
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+.personal-details{
+    display: flex;
+    
+}
+.ques ul{
+    margin-top: 5%;
+    list-style: none;
+    text-transform: uppercase;
+  
+}
+.ques ul li{
+    padding-top: 3%;
+}
+.ans ul{
+    margin-top: 5%;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 50%;
+}
+.ans ul li{
+    padding-top: 8%;
+}
+.decl{
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+.declar-details{
+    margin-top: 2%;
+}
+@media screen and (max-width:578px){
+    .timeline{
+        grid-template-columns: 1fr;     
+        padding-top: 2%;  
+    }
+    .ans{
+        margin-left: 3%;
+    }
+   
+}
+@media screen and (max-width:780px){
+    .col1{
+        grid-column: span 3;
+    }
+    .col2{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    img{
+        width: 40%;
+    }
+    .details h3{
+        padding-top: 3%;
+    }
+    
+}
