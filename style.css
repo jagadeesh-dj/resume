@@ -86,7 +86,7 @@ img{
 .timeline{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 2%;
+    Padding-top: 2%;
     grid-area: 10px;
 }
 .col2 .obj{
@@ -161,6 +161,9 @@ img{
     }
     .col2{
         grid-column: span 4;
+    }
+    .timeline{
+        margin-top:4%;
     }
 }
 @media screen and (max-width:1200px) {
