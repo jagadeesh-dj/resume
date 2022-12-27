@@ -163,7 +163,7 @@ img{
         grid-column: span 4;
     }
     .timeline{
-        margin-top:4%;
+        margin-top:5%;
     }
 }
 @media screen and (max-width:1200px) {
